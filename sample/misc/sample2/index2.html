@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.v1.0.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper mt-4">
+        <div class="container custom-container">
+            <div class="row align-items-center">
+                <div class="col-md-8 main-form">
+                    <h1 class="page-caption">ثبت نام سامانه پیامکی نیازپرداز</h1>
+                    <form class="mb-0">
+                        <div class="form-row">
+                            <div class="form-label-group col-sm-6" id="NameFormGroup">
+                                <input class="form-control text-box single-line py-4 mb-3" id="Name" placeholder="نام" type="text">
+                            </div>
+                            <div class="form-label-group col-sm-6" id="FamilyFormGroup">
+                                <input class="form-control text-box single-line py-4 mb-3" id="Family" placeholder="نام خانوادگی"
+                                    type="text">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-label-group col-sm-6">
+                                <input class="form-control text-box single-line py-4 mb-3" id="Mobile" placeholder="شماره همراه"
+                                    type="text">
+                            </div>
+                            <div class="form-label-group col-sm-6">
+                                <input class="form-control text-box single-line py-4 mb-3" id="DiscountCode" placeholder="کد تخفیف (در صورت وجود)"
+                                    type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="custom-select" id="PanelType">
+                                <option>لطفا پنل انتخاب کنید</option>
+                                <option>پنل پایه - 14400 تومان</option>
+                                <option>پنل ویژه - 34800 تومان</option>
+                                <option selected>پنل تجاری - 52800 تومان</option>
+                                <option>پنل طلایی - 114000 تومان</option>
+                                <option>پنل نمایندگی + سایت فروش - 130000 تومان</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="custom-select " id="PaymentMethodType">
+                                <option>پرداخت الکترونیک</option>
+                                <option>ثبت فیش واریزی</option>
+                            </select>
+                        </div>
+
+
+                        <div class="custom-control custom-checkbox np-custom-control">
+                            <input class="custom-control-input check-box" id="AllowTeramAndPrivacy"  type="checkbox" >
+                            <label class="custom-control-label">
+                                موافقت با
+                                <a class="privacy-link" target="_blank" href="/">حریم خصوصی</a>،
+                                <a class="privacy-link" target="_blank" href="/">شرایط و قوانین</a>
+                                سایت
+                            </label>
+                        </div>
+
+                        <div>
+                            <button type="button" id="register-order-button" class="btn btn-primary mt-4 px-4 btn-round">ثبت نام</button>
+                            
+                        </div>
+
+                    </form>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="icon">
+                        <img class="d-none d-md-inline-block" src="img/paper-plane.svg">
+                        <img class="d-md-none" src="img/paper-plane.svg">
+                        <h5 class="caption">ارسال پیامک</h5>
+                        <p class="description">
+                            متن تاثیر گذار خود را در کمترین زمان ممکن به مخاطبان خود برسانید و با استفاده از بانک شماره ها و دیگر امکانات پنل پیامک، محصول و کار خود را تبلیغ نمایید و از این طریق مشتریان خود را افزایش دهید.
+                        </p>
+                        <div class="my-4">
+                            <a href="#" class="btn btn-side btn-round px-4">پنل اس ام اس</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

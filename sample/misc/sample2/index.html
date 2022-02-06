@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+</head>
+
+<body>
+    <!--register form-->
+    <section class="np-order">
+        <div class="container custom-container">
+            <div class="row align-items-center">
+                <div class="col-md-8 main-form">
+                    <h1 class="page-caption">ثبت نام سامانه پیامکی نیازپرداز</h1>
+                    <form class="mb-0" id="order-register-form">
+                        <div class="form-row">
+                            <div class="form-label-group col-sm-6" id="NameFormGroup">
+                                <input class="form-control text-box single-line" id="Name" placeholder="نام" type="text">
+                                <label>نام</label>
+                            </div>
+                            <div class="form-label-group col-sm-6" id="FamilyFormGroup">
+                                <input class="form-control text-box single-line" id="Family" placeholder="نام خانوادگی"
+                                    type="text">
+                                <label>نام خانوادگی</label>
+                            </div>
+                            <div class="form-label-group col-sm-6">
+                                <input class="form-control text-box single-line" id="Mobile" placeholder="شماره همراه"
+                                    type="text">
+                                <label>شماره همراه</label>
+                            </div>
+                            <div class="form-label-group col-sm-6">
+                                <input class="form-control text-box single-line" id="DiscountCode" placeholder="کد تخفیف (در صورت وجود)"
+                                    type="text">
+                                <label>کد تخفیف در صورت وجود</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select class="custom-select valid" id="PanelType" name="PanelType" aria-required="true"
+                                aria-describedby="PanelType-error">
+                                <option value="">لطفا پنل انتخاب کنید</option>
+                                <option value="70000">پنل پایه - 14400 تومان</option>
+                                <option value="70010">پنل ویژه - 34800 تومان</option>
+                                <option selected="selected" value="70020">پنل تجاری - 52800 تومان</option>
+                                <option value="70030">پنل طلایی - 114000 تومان</option>
+                                <option value="70040">پنل نمایندگی + سایت فروش - 130000 تومان</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <select class="custom-select valid" data-val="true" data-val-required="لطفا نوع پرداخت خود را مشخص کنید"
+                                id="PaymentMethodType" name="PaymentMethodType" aria-required="true" aria-describedby="PaymentMethodType-error"
+                                aria-invalid="false">
+                                <option value="1">پرداخت الکترونیک</option>
+                                <option value="2">ثبت فیش واریزی</option>
+                            </select>
+                        </div>
+
+                        <div class="d-none" id="offline">
+                            <div class="form-row">
+                                <div class="form-label-group col-sm-6">
+                                    <input class="form-control text-box single-line" data-val="true" data-val-number="The field مبلغ پرداختی must be a number."
+                                        data-val-required="The مبلغ پرداختی field is required." id="BankReceiptPayAmount"
+                                        name="BankReceiptPayAmount" placeholder="مبلغ پرداختی (ریال)" type="text" value="">
+                                    <label>مبغ پرداختی (ریال)</label>
+                                </div>
+                                <div class="form-label-group col-sm-6">
+                                    <input class="form-control text-box single-line" id="BankReceiptPursuitCode" name="BankReceiptPursuitCode"
+                                        placeholder="شماره فیش/پیگیری/ارجاع" type="text" value="">
+                                    <label>شماره فیش / پیگیری / ارجاع</label>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <select class="custom-select" id="BankReceiptBankType" name="BankReceiptBankType">
+                                        <option value="">بانک مقصد</option>
+                                        <option value="Mellat">ملت</option>
+                                        <option value="Meli">ملی</option>
+                                        <option value="Saderat">صادرات</option>
+                                        <option value="Parsian">پارسیان</option>
+                                        <option value="Saman">سامان</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <link href="/assets/css/plugins/amib/css/js-persian-cal.css" rel="stylesheet">
+                                    <script src="/assets/js/plugins/amib/js/js-persian-cal.min.js" type="text/javascript"></script>
+
+
+                                    <input class="pdate" data-val="true" data-val-date="The field تاریخ پرداخت must be a date."
+                                        id="BankReceiptPaymentDate" name="BankReceiptPaymentDate" type="hidden" value="">
+                                    <input class="pdate" id="BankReceiptPaymentDate_Persian" name="BankReceiptPaymentDate.Persian"
+                                        type="text" value="" placeholder="تاریخ پرداخت"><a class="pcalBtn" href="#"></a>
+
+                                    <script type="text/javascript">
+                                        $(document).ready(function () {
+                                            new AMIB.persianCalendar('BankReceiptPaymentDate' + "_Persian", {
+                                                extraInputID: 'BankReceiptPaymentDate',
+                                                extraInputFormat: 'YYYY/MM/DD'
+                                            });
+                                        });
+                                    </script>
+                                </div>
+                                <div class="form-group col-sm-12">
+                                    <textarea class="form-control" cols="20" id="BankReceiptDescription" name="BankReceiptDescription"
+                                        placeholder="توضیحات" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="custom-control custom-checkbox np-custom-control">
+                            <input class="custom-control-input check-box" data-val="true" data-val-required="The AllowTeramAndPrivacy field is required."
+                                id="AllowTeramAndPrivacy" name="AllowTeramAndPrivacy" type="checkbox" value="true"><input
+                                name="AllowTeramAndPrivacy" type="hidden" value="false">
+                            <label class="custom-control-label" for="AllowTeramAndPrivacy">
+                                موافقت با
+                                <a class="privacy-link" target="_blank" href="/privacy">حریم خصوصی</a>،
+                                <a class="privacy-link" target="_blank" href="/terms">شرایط و قوانین</a>
+                                سایت
+                            </label>
+                        </div>
+
+                        <div>
+                            <button type="button" id="register-order-button" class="btn btn-primary mt-4 px-4 btn-round"
+                                data-loading-text="<span class='loader'></span>صبر نمایید">ثبت نام</button>
+                            <button type="button" id="ShowAccountNumber" data-toggle="modal" data-target="#ShowAccountNumberModal"
+                                class="btn btn-info mt-4 px-4 btn-round d-none">اطلاعات حساب</button>
+                        </div>
+                        <div id="bankreceipt-success-message" class="alert alert-success d-none" style="margin-top: 15px;">
+                            <strong>سفارش شما با موفقیت ثبت شد</strong>
+                            <br>
+                            <strong>کاربر گرامی:</strong>پنل اس ام اس نیازپرداز، تا لحظاتی دیگر به همراه و ایمیل شما
+                            ارسال می گردد، با سپاس از شما
+                        </div>
+                    </form>
+                    <form id="pay-form" action="https://www.niazpardaz.com/pay/Online" method="post" role="form">
+                        <input id="PaymentSourceType" name="PaymentSourceType" type="hidden" value="12">
+                        <input id="SmspanelOrderId" name="SmspanelOrderId" type="hidden" value="">
+                        <input id="Online_Name" name="Online.Name" type="hidden" value="">
+                        <input id="Online_SureName" name="Online.SureName" type="hidden" value="">
+                        <input id="Online_Tel" name="Online.Tel" type="hidden" value="">
+                        <input id="Online_NationalCode" name="Online.NationalCode" type="hidden" value="">
+                        <input id="Online_Amount" name="Online.Amount" type="hidden" value="">
+                        <input id="Online_PayFor" name="Online.PayFor" type="hidden" value="">
+                        <input id="Online_DiscountCode" name="Online.DiscountCode" type="hidden" value="">
+                    </form>
+                </div>
+
+                <div class="col-md-4 mt-5 mt-md-0">
+                    <div class="side-content">
+                        <div class="icon">
+                            <img class="d-none d-md-inline-block" src="/assets/img/svg/paper-plane.svg">
+                            <img class="d-md-none" src="img/paper-plane.svg">
+                        </div>
+                        <h5 class="caption">ارسال پیامک</h5>
+                        <p class="description">
+                            متن تاثیر گذار خود را در کمترین زمان ممکن به مخاطبان خود برسانید و با استفاده از بانک شماره
+                            ها و دیگر امکانات پنل پیامک، محصول و کار خود را تبلیغ نمایید و از این طریق مشتریان خود را
+                            افزایش دهید.
+                        </p>
+
+                        <div class="mt-4">
+                            <a href="/" class="btn btn-side btn-round px-4">پنل اس ام اس</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

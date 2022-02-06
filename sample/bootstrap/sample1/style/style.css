@@ -1,0 +1,122 @@
+/* fonts */
+@font-face {
+    font-family: 'birthstone';
+    src: url(../fonts/Birthstone-Regular.ttf);
+}
+@font-face {
+    font-family: 'vazir';
+    src: url(../fonts/Vazir-Regular.ttf);
+}
+body {
+    font-family: 'vazir';
+    box-sizing: border-box;
+}
+/* navbar */
+.navbar-light .navbar-toggler {
+    color: #4CAF50;
+}
+.navbar-brand {
+    font-family: 'birthstone';
+    font-size: 3rem;
+    font-weight: 800;
+    color: #4CAF50 !important ;
+}
+.search-wrapper input{
+    border: 3px solid #4CAF50;
+    border-radius: 50px;
+    margin-left: -40px;
+}
+.search-wrapper input:focus {
+    border: 3px solid #4CAF50;
+    box-shadow: none;
+}
+.search-wrapper button {
+    background-color:#4CAF50;
+    border-radius: 50px;
+    color: white;
+    font-size: large;
+}
+/* first section */
+.first-section {
+    height: 90vh;
+    width: 100%;
+    background-image: url(../img/lunchcopy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cover {
+    margin-top: 30vh;
+}
+.cover p{
+    font-weight: 900;
+}
+.mybtn {
+    display: inline-block;
+    text-decoration: none;
+    padding: .8rem 4rem;
+    background-color: #4CAF50;
+    border-radius: 60px;
+    color: white;
+    font-weight: 600;
+    transition: background-color .3s;
+}
+.mybtn:hover {
+    border: none;
+    background-color: rgb(61, 138, 64);
+    color: white;
+}
+.section-title p:last-child {
+    color: #4CAF50;
+}
+/* trends */
+.card .card-body:hover {
+    box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+/* cta */
+.cta {
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) , url(../img/red-light.jpg) no-repeat;
+    background-size: cover;
+    height: 80vh;
+    color: white;
+}
+/* contact */
+form div input {
+    width: 49%;
+    margin: 2px;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+}
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+}
+.enroll input{
+    color: white;
+    background-color: black;
+    border-radius:0 5px 5px 0;
+    border: 3px solid white;
+}
+.enroll input:focus {
+    color: white;
+    background-color: black;
+    border-radius:0 5px 5px 0;
+    border: 3px solid white;
+}
+.enroll button {
+    color: black;
+    background-color: white;
+    border-radius: 5px 0 0 5px;
+}
+.social-icon i {
+    font-size: 2.8rem;
+}
+.social-icon i:hover {
+    color: #4CAF50;
+    transition: .3s;
+    cursor: pointer;
+}

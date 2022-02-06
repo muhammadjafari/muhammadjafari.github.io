@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/line-awesome.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style/style.css" />
+</head>
+
+<body>
+    <!-- sidebar -->
+    <input type="checkbox" id="toggler" style="float: right;">
+    <div class="sidebar">
+        <h1 class="logo-wrapper">
+            <i class="lab la-accusoft"></i>
+            <span>Accusoft</span>
+        </h1>
+        <ul class="sidebar-list">
+            <li class="active"> <a href="#"><i class="las la-igloo"></i><span>Dashboard</span> </a></li>
+            <li> <a href="#"><i class="las la-users"></i><span>Customers</span> </a></li>
+            <li> <a href="#"><i class="las la-clipboard-list"></i><span>Projects</span> </a></li>
+            <li> <a href="#"><i class="las la-shopping-bag"></i><span>Orders</span> </a></li>
+            <li> <a href="#"><i class="las la-receipt"></i><span>Inventory</span> </a></li>
+            <li> <a href="#"><i class="las la-user-circle"></i><span>Accounts</span> </a></li>
+            <li> <a href="#"><i class="las la-clipboard-list"></i><span>Tasks</span> </a></li> 
+        </ul>
+    </div>
+    <div class="main-content">
+        <!-- navbar -->
+        <nav>
+            <div class="dashboard-wrapper">
+                <h1>
+                    <label for="toggler"><i class="las la-bars"></i></label>
+                    <span class="dashboard">Dashboard</span>
+                </h1>
+                <div class="search-wrapper">
+                    <span class="las la-search"></span>
+                    <input type="search" placeholder="search here ...">
+                </div>
+                <div class="user-wrapper">
+                    <img src="image/images.jpeg" alt="user">
+                    <div>
+                        <h3>Alex Morgan</h3>
+                        <p>super admin</p>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <!-- cards -->
+        <div class="card-wrapper">
+            <div class="card">
+                <div>
+                    <h1>54</h1>
+                    <span>customers</span>
+                </div>
+                <div>
+                    <i class="la la-users card-icon"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h1>79</h1>
+                    <span>projects</span>
+                </div>
+                <div>
+                    <i class="la la-clipboard card-icon"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h1>124</h1>
+                    <span>orders</span>
+                </div>
+                <div>
+                    <i class="la la-shopping-bag card-icon"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h1>$6k</h1>
+                    <span>income</span>
+                </div>
+                <div>
+                    <i class="la la-google-wallet card-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <section class="container">
+            <!-- table -->
+            <div class="table-wrapper">
+                <div class="table-head">
+                    <h3>Recent projects</h3>
+                    <button>see more <i class="las la-arrow-right"></i></button>
+                </div>
+                <div class="table-body">
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Project title</td>
+                                    <td>Department</td>
+                                    <td>status</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>UI/UX design</td>
+                                    <td>UI team</td>
+                                    <td><span class="status"></span>review</td>
+                                </tr>
+                                <tr>
+                                    <td>Web development</td>
+                                    <td>Frontend</td>
+                                    <td><span class="status"></span> in progress</td>
+                                </tr>
+                                <tr>
+                                    <td>Ushop app</td>
+                                    <td>mobile team</td>
+                                    <td><span class="status"></span> pending</td>
+                                </tr>
+                                <tr>
+                                    <td>UI/UX design</td>
+                                    <td>UI team</td>
+                                    <td><span class="status"></span> in progress</td>
+                                </tr>
+                                <tr>
+                                    <td>Web development</td>
+                                    <td>Frontend</td>
+                                    <td><span class="status"></span> in progress</td>
+                                </tr>
+                                <tr>
+                                    <td>Design</td>
+                                    <td>UI team</td>
+                                    <td><span class="status"></span> pending</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+            <!-- customer -->
+            <div class="customer-wrapper">
+                <div class="table-head">
+                    <h3>New customers</h3>
+                    <button>see more <i class="las la-arrow-right"></i></button>
+                </div>
+                <div class="table-body">
+                    <div class="customer">
+                        <img src="image/images.jpeg" alt="" class="customer-img">
+                        <div>
+                            <h3>Lewis Cuningham</h3>
+                            <small>CEO excerpt</small>
+                        </div>
+                        <div>
+                            <i class="las la-user-circle customer-icon"></i>
+                            <i class="las la-comment customer-icon"></i>
+                            <i class="las la-phone customer-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-body">
+                    <div class="customer">
+                        <img src="image/images.jpeg" alt="" class="customer-img">
+                        <div>
+                            <h3>Lewis Cuningham</h3>
+                            <small>CEO excerpt</small>
+                        </div>
+                        <div>
+                            <i class="las la-user-circle customer-icon"></i>
+                            <i class="las la-comment customer-icon"></i>
+                            <i class="las la-phone customer-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-body">
+                    <div class="customer">
+                        <img src="image/images.jpeg" alt="" class="customer-img">
+                        <div>
+                            <h3>Lewis Cuningham</h3>
+                            <small>CEO excerpt</small>
+                        </div>
+                        <div>
+                            <i class="las la-user-circle customer-icon"></i>
+                            <i class="las la-comment customer-icon"></i>
+                            <i class="las la-phone customer-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-body">
+                    <div class="customer">
+                        <img src="image/images.jpeg" alt="" class="customer-img">
+                        <div>
+                            <h3>Lewis Cuningham</h3>
+                            <small>CEO excerpt</small>
+                        </div>
+                        <div>
+                            <i class="las la-user-circle customer-icon"></i>
+                            <i class="las la-comment customer-icon"></i>
+                            <i class="las la-phone customer-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-body">
+                    <div class="customer">
+                        <img src="image/images.jpeg" alt="" class="customer-img">
+                        <div>
+                            <h3>Lewis Cuningham</h3>
+                            <small>CEO excerpt</small>
+                        </div>
+                        <div>
+                            <i class="las la-user-circle customer-icon"></i>
+                            <i class="las la-comment customer-icon"></i>
+                            <i class="las la-phone customer-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

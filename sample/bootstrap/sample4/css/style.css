@@ -1,0 +1,39 @@
+*,*:after,*:before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.unti-row{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+.cafe-wrap{
+    position: relative;
+}
+.cafe-wrap-image img{
+    max-width: 100%;
+    height: auto;
+}
+.cafe-wrap-content{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+.cafe-wrap-content-center{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.inp-max{
+    max-width: 500px;
+}
+.cus-link{
+    text-decoration: none;
+    color: gray;
+}
+.cus-link:hover{
+    text-decoration: none;
+    color: black;
+}

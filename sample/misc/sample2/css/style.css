@@ -1,0 +1,74 @@
+@font-face{
+    font-family: shabnam;
+    src: url(../fonts/Shabnam.eot);
+    src: url(../fonts/Shabnam.ttf);
+    src: url(../fonts/Shabnam.woff);
+}
+body{
+    font-size: 14px;
+}
+
+.main-form {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+@media (min-width: 768px){
+.main-form {
+    padding: 2.5rem;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+    text-align: right ;
+    padding-left:70px; 
+
+    }
+}
+
+
+
+
+.page-caption {
+    font-size: 1.2rem;
+    color: #333;
+    color: #0c7796;
+    color: #2489f5;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+@media (min-width: 768px){
+    .page-caption {
+        margin-bottom: 1.8rem;
+    }
+}
+@media (min-width: 768px){
+.custom-container {
+    padding: 1.35rem 2rem;
+    padding: 2rem 2.8rem;
+    padding-left: 1rem;
+    border-radius: 75px 5px 5px 5px;
+    background: #efeff1;
+    background: #dce8e7;
+}
+}
+
+
+
+.btn-side {
+    font-weight: bold;
+    font-size: .75rem;
+    color: #005192;
+    background: #fff;
+}
+.btn{
+    transition: all .5s;
+}
+.btn:hover {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.08), 0 4px 18px 0 rgba(0,0,0,.09);
+}
+.btn-round {
+    border-radius: 25px;
+}
